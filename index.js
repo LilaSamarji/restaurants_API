@@ -1,7 +1,7 @@
 const express = require('express')
 var cors = require('cors')
 var app = express()
-
+//To POST ON RENDER
 app.use(cors())
 const PORT=process.env.PORT || 3030;
 var bodyparser=require('body-parser')
@@ -55,6 +55,6 @@ app.get('/', function (req, res) {
 })
 //POST
 //app.post('/saveUser',(req,res)=>{cosole.log(req.body); res.send('okay'); })
-
+//TO POST ON RENDER
 app.listen(PORT,()=>{console.log(`server started on port ${PORT}`);})
 
